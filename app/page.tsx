@@ -127,9 +127,9 @@ export default function Home() {
             <Image
               src="/logo-transparent.png"
               alt="KFG"
-              width={120}
-              height={44}
-              className="h-9 md:h-11 w-auto object-contain"
+              width={240}
+              height={88}
+              className="h-16 md:h-20 w-auto object-contain"
             />
           </Link>
           <div className="hidden lg:flex gap-7">

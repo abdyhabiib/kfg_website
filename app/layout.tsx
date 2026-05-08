@@ -19,6 +19,15 @@ export const metadata: Metadata = {
   title: "KFG — Restaurant, Café & Workspace · Galkacyo",
   description:
     "KFG — Burgers, fried chicken, pizza & great coffee in Galkacyo, Puntland. Air-conditioned café & workspace with a view.",
+  icons: {
+    icon: [
+      { url: "/favicon/favicon.ico", sizes: "any" },
+      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: { url: "/favicon/apple-touch-icon.png" },
+  },
+  manifest: "/favicon/site.webmanifest",
 };
 
 export default function RootLayout({
