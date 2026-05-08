@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
 
-const MENU_URL = "https://kfg-menu.vercel.app/";
+const MENU_URL = "https://menu.kfggalkacyo.com/";
 const WHATSAPP_URL = "https://wa.me/252907795752";
-const MAPS_URL = "https://www.google.com/maps/search/KFG+Restaurant+Galkacyo+Somalia";
+const MAPS_URL = "https://maps.app.goo.gl/7L2NLEhstWFVHHFv7";
 
 /* ── SVG icons ─────────────────────────────────────────────────── */
 const ArrowRight = () => (
@@ -136,7 +136,7 @@ export default function Home() {
                   <ArrowRight />
                 </Link>
                 <Link
-                  href="#visit"
+                  href={MAPS_URL}
                   className="inline-flex items-center gap-2.5 px-[22px] py-3.5 md:px-[26px] md:py-4 rounded-full border-[1.5px] border-[#1A1A1A] text-[#1A1A1A] font-semibold text-sm md:text-[15px] transition-all hover:bg-[#1A1A1A] hover:text-white"
                 >
                   <MapPin />
@@ -145,7 +145,7 @@ export default function Home() {
               </div>
 
               <div className="mt-6 flex gap-2 flex-wrap justify-center lg:justify-start">
-                {["Fresh, never frozen", "Halal", "Family friendly", "Free Wi-Fi"].map((c) => (
+                {["Fresh","Family friendly", "Free Wi-Fi"].map((c) => (
                   <span
                     key={c}
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#F7F4EF] rounded-full text-xs font-medium text-[#555]"
@@ -234,7 +234,6 @@ export default function Home() {
             <div key={rep} className="flex items-center flex-shrink-0">
               {[
                 "🔥 Fire-grilled daily",
-                "🐔 100% Halal",
                 "❄️ Never frozen",
                 "✅ Made to order",
                 "☕ Best Spanish latte in town",
@@ -348,7 +347,6 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-4">
             {[
               { emoji: "🔥", title: "Fire-grilled", sub: "Cooked fresh to order" },
-              { emoji: "✅", title: "100% Halal", sub: "Certified & verified" },
               { emoji: "❄️", title: "Never frozen", sub: "Fresh ingredients daily" },
               { emoji: "🤝", title: "Family friendly", sub: "Kids always welcome" },
               { emoji: "📶", title: "Free fibre Wi-Fi", sub: "Fast enough to work on" },

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const MENU_URL = 'https://kfg-menu.vercel.app/';
+const MENU_URL = 'https://menu.kfggalkacyo.com/';
 const WHATSAPP_URL = 'https://wa.me/252907795752';
 
 const NAV_LINKS = [
