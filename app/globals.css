@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-kfg-red: #E30613;
+  --color-kfg-red-2: #B70410;
+  --color-kfg-red-soft: #FFF1F2;
+  --color-kfg-ink: #1A1A1A;
+  --color-kfg-ink-2: #555555;
+  --color-kfg-ink-3: #8A8A8A;
+  --color-kfg-bg: #FFFFFF;
+  --color-kfg-bg-soft: #F7F4EF;
+  --color-kfg-rule: #ECE6DC;
+  --color-kfg-rule-2: #E5E5E5;
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-dm-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1A1A1A;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #E30613;
+  color: #fff;
+}
+
+/* Placeholder image stripe pattern */
+.ph-stripe {
+  background: repeating-linear-gradient(
+    135deg,
+    #F4ECDC 0 8px,
+    #ECE2CC 8px 16px
+  );
+}
