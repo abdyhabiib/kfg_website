@@ -6,7 +6,9 @@
       "Bash(tar -xzf design.tar.gz)",
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --yes)",
       "Bash(cp \"C:\\\\Users\\\\abdyh\\\\.claude\\\\projects\\\\C--Users-abdyh-OneDrive-Desktop-kfg-website\\\\702df42b-9b66-4b38-b08d-c4cd8acbfcf1\\\\tool-results\\\\kfg-website\\\\project\\\\assets\\\\logo.png\" \"C:\\\\Users\\\\abdyh\\\\OneDrive\\\\Desktop\\\\kfg_website\\\\public\\\\logo.png\")",
-      "Bash(cp \"C:\\\\Users\\\\abdyh\\\\.claude\\\\projects\\\\C--Users-abdyh-OneDrive-Desktop-kfg-website\\\\702df42b-9b66-4b38-b08d-c4cd8acbfcf1\\\\tool-results\\\\kfg-website\\\\project\\\\uploads\\\\logo-transparent.png\" \"C:\\\\Users\\\\abdyh\\\\OneDrive\\\\Desktop\\\\kfg_website\\\\public\\\\logo-transparent.png\")"
+      "Bash(cp \"C:\\\\Users\\\\abdyh\\\\.claude\\\\projects\\\\C--Users-abdyh-OneDrive-Desktop-kfg-website\\\\702df42b-9b66-4b38-b08d-c4cd8acbfcf1\\\\tool-results\\\\kfg-website\\\\project\\\\uploads\\\\logo-transparent.png\" \"C:\\\\Users\\\\abdyh\\\\OneDrive\\\\Desktop\\\\kfg_website\\\\public\\\\logo-transparent.png\")",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)"
     ]
   }
 }

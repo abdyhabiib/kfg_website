@@ -36,11 +36,3 @@ body {
   color: #fff;
 }
 
-/* Placeholder image stripe pattern */
-.ph-stripe {
-  background: repeating-linear-gradient(
-    135deg,
-    #F4ECDC 0 8px,
-    #ECE2CC 8px 16px
-  );
-}
