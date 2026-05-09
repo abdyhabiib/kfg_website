@@ -4,12 +4,18 @@ import Navbar from "./components/Navbar";
 
 const MENU_URL = "https://menu.kfggalkacyo.com/";
 const WHATSAPP_URL = "https://wa.me/252907795752";
+const PHONE_URL = "tel:+252905522221"; // Added for direct call navigation
 const MAPS_URL = "https://maps.app.goo.gl/7L2NLEhstWFVHHFv7";
 
 /* ── SVG icons ─────────────────────────────────────────────────── */
 const ArrowRight = () => (
   <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth={2} className="w-3.5 h-3.5 flex-shrink-0">
     <path d="M2 7h10M7 2l5 5-5 5" />
+  </svg>
+);
+const PhoneIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 flex-shrink-0">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
   </svg>
 );
 const MapPin = () => (
@@ -100,61 +106,7 @@ function Feature({ icon, title, desc }: { icon: React.ReactNode; title: string; 
 export default function Home() {
   return (
     <>
-<<<<<<< HEAD
-      {/* ── TOPBAR ─────────────────────────────────────────────── */}
-      <div className="bg-[#1A1A1A] text-white text-xs py-2.5 overflow-hidden">
-        <div className="max-w-[1280px] mx-auto px-[22px] md:px-10 xl:px-16 flex gap-3.5 flex-wrap justify-between items-center">
-          <span className="inline-flex items-center gap-2">
-            <span className="w-[7px] h-[7px] rounded-full bg-green-500 shadow-[0_0_0_4px_rgba(34,197,94,0.18)]" />
-            Open now · 06:00 — 23:30 daily
-          </span>
-          <span className="hidden sm:inline-flex items-center gap-2">Galkacyo · Puntland · Somalia</span>
-          <Link href={WHATSAPP_URL} className="inline-flex items-center gap-2 text-white hover:underline">
-            WhatsApp +252 90 779 5752 →
-          </Link>
-        </div>
-      </div>
-
-      {/* ── NAV ────────────────────────────────────────────────── */}
-      <nav className="sticky top-0 z-50 bg-white/[0.92] backdrop-blur-[12px] border-b border-[#E5E5E5]">
-        <div className="max-w-[1280px] mx-auto px-[22px] md:px-10 xl:px-16 flex items-center justify-between py-3.5 gap-4">
-          <Link href="/" aria-label="KFG home" className="inline-flex items-center">
-            <Image
-              src="/logo-transparent.png"
-              alt="KFG"
-              width={120}
-              height={44}
-              className="h-9 md:h-11 w-auto object-contain"
-            />
-          </Link>
-          <div className="hidden lg:flex gap-7">
-            {[
-              { href: "#menu", label: "Menu" },
-              { href: "#cafe", label: "Café & Workspace" },
-              { href: "#visit", label: "Visit" },
-              { href: MENU_URL, label: "Full menu ↗" },
-            ].map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="font-medium text-sm text-[#555] hover:text-[#E30613] transition-colors"
-              >
-                {l.label}
-              </Link>
-            ))}
-          </div>
-          <Link
-            href={WHATSAPP_URL}
-            className="inline-flex items-center gap-2 px-[18px] py-2.5 md:px-[22px] md:py-3 rounded-full bg-[#E30613] text-white font-semibold text-[13px] md:text-sm whitespace-nowrap transition-all hover:bg-[#B70410] hover:-translate-y-px"
-          >
-            WhatsApp
-            <ArrowRight />
-          </Link>
-        </div>
-      </nav>
-=======
       <Navbar />
->>>>>>> f2be9b519b38437e51f5aca3823ae64cc8ca9a1d
 
       {/* ── HERO ───────────────────────────────────────────────── */}
       <header className="pt-[clamp(40px,7vw,80px)] pb-[clamp(60px,9vw,110px)]">
@@ -288,7 +240,7 @@ export default function Home() {
             <div key={rep} className="flex items-center flex-shrink-0">
               {[
                 "🔥 Fire-grilled daily",
-                "❄️ Never frozen",
+                "📦 Doorstep Delivery",
                 "✅ Made to order",
                 "☕ Best Spanish latte in town",
                 "🏆 Est. 2024",
@@ -401,7 +353,7 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-4">
             {[
               { emoji: "🔥", title: "Fire-grilled", sub: "Cooked fresh to order" },
-              { emoji: "❄️", title: "Never frozen", sub: "Fresh ingredients daily" },
+              { emoji: "📦", title: "Safe Delivery", sub: "Straight to your doorstep" },
               { emoji: "🤝", title: "Family friendly", sub: "Kids always welcome" },
               { emoji: "📶", title: "Free fibre Wi-Fi", sub: "Fast enough to work on" },
             ].map((item) => (
@@ -626,16 +578,16 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* ── FLOATING WHATSAPP CTA (mobile only) ─────────────────── */}
-      <div className="lg:hidden fixed bottom-5 right-5 z-50">
-        <Link
-          href={WHATSAPP_URL}
-          className="inline-flex items-center gap-2.5 px-5 py-3.5 rounded-full bg-[#25D366] text-white font-bold text-sm shadow-[0_8px_28px_-4px_rgba(37,211,102,0.55)] hover:bg-[#20c05a] hover:-translate-y-0.5 transition-all"
-        >
-          <WhatsAppIcon />
-          Order Now
-        </Link>
-      </div>
+      {/* ── FLOATING CALL CTA (mobile only) ─────────────────── */}
+<div className="lg:hidden fixed bottom-5 right-5 z-50">
+  <Link
+    href={PHONE_URL}
+    className="inline-flex items-center gap-2.5 px-6 py-4 rounded-full bg-[#E30613] text-white font-bold text-sm shadow-[0_12px_32px_-8px_rgba(227,6,19,0.5)] hover:bg-[#B70410] hover:-translate-y-0.5 transition-all"
+  >
+    <PhoneIcon />
+    Call Us Now
+  </Link>
+</div>
     </>
   );
 }
