@@ -510,7 +510,7 @@ export default function Home() {
             <div>
               <h4 className="text-[11px] tracking-[0.18em] uppercase text-[#BDBDBD] mb-2.5 font-medium">Address</h4>
               <p className="font-serif italic font-extrabold text-[22px] leading-snug tracking-tight text-white">
-                Galkacyo, <span className="text-[#E30613]">PL</span><br />Puntland, Somalia
+                Galkacyo, <span className="text-[#E30613]">Puntland</span><br />Somalia
               </p>
               <small className="block text-[13px] text-[#BDBDBD] mt-1.5 leading-relaxed not-italic">
                 Walk-in welcome. Reservations for 6+.
@@ -571,10 +571,21 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-t border-[#E5E5E5] pt-5 flex justify-between items-center gap-3.5 flex-wrap text-xs text-[#8A8A8A]">
-            <span>© 2026 KFG · All rights reserved</span>
-            <span>Made with care in Galkacyo, Puntland.</span>
-          </div>
+         <div className="border-t border-[#E5E5E5] pt-5 flex flex-col md:flex-row justify-between items-center gap-3.5 text-xs text-[#8A8A8A]">
+  <span className="text-center md:text-left">© 2026 KFG · All rights reserved</span>
+  <span className="text-center md:text-right">
+    Developed by{" "}
+    <a 
+      href="https://goodirtechnology.com" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="font-semibold hover:underline transition-colors"
+      style={{ color: '#850d33' }}
+    >
+      goodirtechnology.com
+    </a>
+  </span>
+</div>
         </div>
       </footer>
 
@@ -585,7 +596,7 @@ export default function Home() {
     className="inline-flex items-center gap-2.5 px-6 py-4 rounded-full bg-[#E30613] text-white font-bold text-sm shadow-[0_12px_32px_-8px_rgba(227,6,19,0.5)] hover:bg-[#B70410] hover:-translate-y-0.5 transition-all"
   >
     <PhoneIcon />
-    Call Us Now
+    Call Us
   </Link>
 </div>
     </>
