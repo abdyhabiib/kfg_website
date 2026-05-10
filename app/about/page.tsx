@@ -37,7 +37,7 @@ export default function AboutPage() {
               <div className="font-sans text-[17px] leading-[1.8] text-[#444] space-y-6">
                 <p>
                   For a long time, if you wanted a proper meal in Galkacyo — something
-                  made with care, in a space that felt good to sit in — you had to make
+                  made with care, in a space that felt good to sit in, you had to make
                   do. The food was fine. The place was fine. But{" "}
                   <em className="text-[#1A1A1A] not-italic font-semibold">fine</em>{" "}
                   wasn&apos;t what we were after.
@@ -68,7 +68,7 @@ export default function AboutPage() {
                   started over. The menu took longer than we expected. It was worth it.
                 </p>
                 <p>
-                  Then came the space — the air conditioning, the windows, the tables
+                  Then came the space, the air conditioning, the windows, the tables
                   you can actually spread out on, the Wi-Fi fast enough for real work.
                   We wanted KFG to be somewhere you&apos;d come for lunch and still be
                   there at sunset, not because you got stuck, but because you wanted to
@@ -105,7 +105,7 @@ export default function AboutPage() {
               {[
                 {
                   label: "On food",
-                  text: "If we wouldn't eat it ourselves, we won't put it in front of you. Every item on our menu exists because someone in our kitchen actually loves it — not because it was easy to make or cheap to source. Shortcuts aren't on the menu.",
+                  text: "If we wouldn't eat it ourselves, we won't put it in front of you. Every item on our menu exists because someone in our kitchen actually loves it, not because it was easy to make or cheap to source. Shortcuts aren't on the menu.",
                 },
                 {
                   label: "On hospitality",
@@ -113,7 +113,7 @@ export default function AboutPage() {
                 },
                 {
                   label: "On this city",
-                  text: "Galkacyo is growing. It's changing. Young people here are hungry for spaces that take them seriously — to work in, to meet in, to celebrate in. We want to be that place. Not just a restaurant. A neighbourhood fixture that this city grows up alongside.",
+                  text: "Galkacyo is growing. It's changing. Young people here are hungry for spaces that take them seriously, to work in, to meet in, to celebrate in. We want to be that place. Not just a restaurant. A neighbourhood fixture that this city grows up alongside.",
                 },
               ].map(({ label, text }) => (
                 <div

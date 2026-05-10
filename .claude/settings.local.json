@@ -9,7 +9,12 @@
       "Bash(cp \"C:\\\\Users\\\\abdyh\\\\.claude\\\\projects\\\\C--Users-abdyh-OneDrive-Desktop-kfg-website\\\\702df42b-9b66-4b38-b08d-c4cd8acbfcf1\\\\tool-results\\\\kfg-website\\\\project\\\\uploads\\\\logo-transparent.png\" \"C:\\\\Users\\\\abdyh\\\\OneDrive\\\\Desktop\\\\kfg_website\\\\public\\\\logo-transparent.png\")",
       "Bash(npx tsc *)",
       "Bash(npm run *)",
-      "Bash(node ./node_modules/next/dist/bin/next build)"
+      "Bash(node ./node_modules/next/dist/bin/next build)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\abdyh\\\\OneDrive\\\\Desktop\\\\kfg_website\" -Recurse -File | Where-Object { $_.FullName -notmatch 'node_modules|\\\\.next' } | Select-Object FullName)",
+      "PowerShell(head *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
