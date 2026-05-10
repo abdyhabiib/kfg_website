@@ -36,7 +36,7 @@ export default function AboutPage() {
               {/* Left column */}
               <div className="font-sans text-[17px] leading-[1.8] text-[#444] space-y-6">
                 <p>
-                  For a long time, if you wanted a proper meal in Galkacyo — something
+                  For a long time, if you wanted a proper meal in Galkacyo, something
                   made with care, in a space that felt good to sit in, you had to make
                   do. The food was fine. The place was fine. But{" "}
                   <em className="text-[#1A1A1A] not-italic font-semibold">fine</em>{" "}
