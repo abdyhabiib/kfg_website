@@ -8,9 +8,10 @@ const MENU_URL = 'https://menu.kfggalkacyo.com/';
 const WHATSAPP_URL = 'https://wa.me/252907795752';
 
 const NAV_LINKS = [
-  { href: '#menu', label: 'Menu' },
-  { href: '#cafe', label: 'Café & Workspace' },
-  { href: '#visit', label: 'Visit' },
+  { href: '/#menu', label: 'Menu' },
+  { href: '/#cafe', label: 'Café & Workspace' },
+  { href: '/#visit', label: 'Visit' },
+  { href: '/about', label: 'About' },
   { href: MENU_URL, label: 'Full Menu ↗' },
 ];
 
